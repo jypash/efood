@@ -1,0 +1,52 @@
+.fast {
+  padding: 104px 0 94px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  &__info {
+
+    &-title {
+      @include text(500, 66px, 78px);
+      text-transform: capitalize;
+      color: #363853;
+    }
+
+    &-text {
+      @include text(400, 20px, 30px);
+      text-transform: capitalize;
+      color: #363853;
+      margin: 23px 0 45px;
+    }
+    &-btns{
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+    }
+    &-btn{
+      background: #FF7A50;
+      box-shadow: 0 22px 40px rgba(255, 104, 56, 0.19);
+      border-radius: 5px;
+      padding: 13px 21px;
+      border: none;
+      @include text(400, 20px, 24px);
+      text-align: center;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+    &-link{
+      @include text(400, 20px, 24px);
+      text-align: center;
+      text-decoration-line: underline;
+      color: #363853;
+    }
+  }
+
+
+  &__img{
+    width: 50%;
+  }
+}

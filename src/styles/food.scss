@@ -1,0 +1,43 @@
+.food{
+  padding-bottom: 165px;
+  &__row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 43px;
+    margin-top: 50px;
+  }
+  &__card{
+    width: calc(33.33333% - 28.66666px);
+    background: #FFFFFF;
+    &-img{
+      width: 100%;
+    }
+    &-info{
+      padding: 22px 39px 22px 20px;
+      &-title{
+        @include text(400, 24px, 30px);
+        color: #363853;
+      }
+
+      &-bottom{
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+        margin-top: 14px;
+      &-time{
+        @include text(300, 18px, 30px);
+        color: #36385390;
+      }
+        &-btn{
+          padding: 10px 32px;
+          background: $orange;
+          box-shadow: 0px 5px 12px rgba(255, 104, 56, 0.19);
+          border-radius: 20px 20px 0px 20px;
+          border: none;
+        }
+      }
+    }
+
+  }
+}
